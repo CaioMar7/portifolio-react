@@ -1,7 +1,8 @@
 import { Container, FirstSection, SecondSection } from "./styles";
 import { LinkButton } from "../../components/LinkButton";
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
-import { AiOutlineMessage } from "react-icons/ai";
+import { BiMessageSquareDetail } from "react-icons/bi";
+import ImgCaio  from "../../assets/portifolio-img.png"
 
 export function Home() {
     return (
@@ -14,11 +15,13 @@ export function Home() {
                 </div>
                 <div>
                     <LinkButton to="https://www.trello.com" target="_blank" text="Download CV" icon={BsFillArrowDownCircleFill}/>
-                    <LinkButton to="https://www.trello.com" target="_blank" text="Fale comigo" icon={AiOutlineMessage}/>
+                    <LinkButton to="https://www.trello.com" target="_blank" text="Fale comigo" icon={BiMessageSquareDetail}/>
                 </div>
             </FirstSection>
             <SecondSection>
-
+            <div>
+                <img src={ImgCaio} alt="Foto do desenvolvedor Caio"/>
+            </div>
             </SecondSection>
         </Container>
     )
