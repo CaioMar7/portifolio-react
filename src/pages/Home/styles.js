@@ -76,8 +76,8 @@ export const SecondSection = styled.section`
             height: 100%;
             border-radius: 45% 45% 0 0;
 
-            -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
-            from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+            -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+            mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
             
             transition: all .6s;
 
