@@ -6,23 +6,40 @@ export const Container = styled.div `
 
     padding: 5vh 1vh;
 
+    gap: 1rem;
+
     display: grid;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 3fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "firstsection"
     "secondsection"
+    "thirdsection"
+    "fourthsection"
+    "fifthsection"
+    "sixthsection"
     ;
 `
 
-export const FirstSection = styled.section`
+export const Section = styled.section`
     width: 100%;
     padding: 1rem;
-    grid-area: firstsection;
 
+    gap: .5rem;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+    max-width: 50rem;
+    margin: 0 auto;
+`
+
+
+export const FirstSection = styled(Section)`
+    grid-area: firstsection;
+    align-items: inherit;
+
     gap: 2rem;
 
     a {
@@ -57,12 +74,8 @@ export const FirstSection = styled.section`
     }
 `
 
-export const SecondSection = styled.section`
-    width: 100%;
+export const SecondSection = styled(Section)`
     grid-area: secondsection;   
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     div:nth-child(1){
         width: 100%;
@@ -87,4 +100,52 @@ export const SecondSection = styled.section`
             }
         }
     }
+`
+
+export const ThirdSection = styled(Section) `
+    grid-area: thirdsection;   
+
+    background-color: #1e1f39;
+    border-radius: 2rem;
+`
+
+export const FourthSection = styled(Section) `
+    grid-area: fourthsection;   
+`
+
+export const FifthSection = styled(Section) `
+    grid-area: fifthsection;
+
+    background-color: #1e1f39;
+    border-radius: 2rem;
+
+    gap: 2rem;
+
+    ul {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        max-width: 50rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    
+`
+
+export const SixthSection = styled(Section) `
+    grid-area: sixthsection;
+`
+
+export const SectionTitle = styled.h2`
+        color: ${({theme}) => theme.COLORS.TEXT_WHITE};
+        font-size: 2rem;
+`
+
+export const SectionDescription = styled.p`
+        color: ${({theme}) => theme.COLORS.TEXT_WHITE};
+        text-align: justify;
+
+        max-width: 50rem;
 `
