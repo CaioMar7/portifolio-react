@@ -22,7 +22,7 @@ export const Container = styled.div `
 
 export const Section = styled.section`
     width: 100%;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
 
     gap: .5rem;
 
@@ -146,6 +146,11 @@ export const SectionTitle = styled.h2`
 export const SectionDescription = styled.p`
         color: ${({theme}) => theme.COLORS.TEXT_WHITE};
         text-align: justify;
+
+        display: flex;
+        align-items: center;
+
+        gap: .5rem;
 
         max-width: 50rem;
 `
