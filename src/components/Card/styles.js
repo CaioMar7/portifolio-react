@@ -2,12 +2,15 @@ import { styled } from "styled-components";
 
 export const Container = styled.li`
     width: 100%;
+    height: 40rem;
 
     min-width: 20rem;
+    min-height: 20rem;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 
     gap: 1rem;
 
@@ -18,8 +21,9 @@ export const Container = styled.li`
 
     img {
         width: 100%;
+        height: 20rem;
         max-width: 25rem;
-        max-height: 25rem;
+        max-height: 20rem;
     }
 
     a {
@@ -29,6 +33,11 @@ export const Container = styled.li`
 
     h3, p {
         color: ${({theme}) => theme.COLORS.TEXT_WHITE};
+    }
+
+    p {
+        max-height: 8rem;
+        overflow-x: hidden;
     }
 
 `

@@ -2,7 +2,7 @@ import { Container, FirstSection, SecondSection, SectionDescription, SectionTitl
 import { LinkButton } from "../../components/LinkButton";
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
 import { BiMessageSquareDetail, BiLogoReact, BiLogoJavascript, BiLogoNodejs,BiLogoGithub } from "react-icons/bi";
-import { AiOutlineHtml5, AiOutlineConsoleSql } from "react-icons/ai"
+import { AiOutlineHtml5, AiOutlineConsoleSql, AiOutlineLinkedin, AiOutlineWhatsApp, AiOutlineMail } from "react-icons/ai"
 import { BsFiletypeCss } from "react-icons/bs"
 import { RiGraduationCapFill } from "react-icons/ri"
 import ImgCaio  from "../../assets/portifolio-img.png"
@@ -28,10 +28,10 @@ export function Home() {
 
     const projectList = [
         {id: 1, title: "Meu Portifólio", description: "Projeto do meu portifólio, mobile-first, responsivo. A idéia desse portifólio é ser minimalista e objetivo, pois acredito que passe maior profissionalismo e facilite para a análise dos recrutadores.", projectLink: "https://github.com/CaioMar7/portifolio-react", imgSrc: "https://i.imgur.com/AibiHiL.png"},
-        {id: 2, title: "Lorem ipsum dolor sit amet. In dolores quis sed labo", description: "Lorem ipsum dolor sit amet. In dolores quis sed laboriosam fugiat sit veniam recusandae eos eius voluptatem est omnis tenetur. Et cumque unde et nobis iste ex odio alias ut libero officiis et voluptas consequuntur? Ut molestias mollitia et dolor libero et repudiandae ratione At eius voluptatem.", projectLink: "www.google.com.br", imgSrc: "https://pbs.twimg.com/profile_images/1662499731564638209/boE4IzYd_400x400.jpg"},
-        {id: 3, title: "Lorem ipsum dolor sit amet. In dolores quis sed labo", description: "Lorem ipsum dolor sit amet. In dolores quis sed laboriosam fugiat sit veniam recusandae eos eius voluptatem est omnis tenetur. Et cumque unde et nobis iste ex odio alias ut libero officiis et voluptas consequuntur? Ut molestias mollitia et dolor libero et repudiandae ratione At eius voluptatem.", projectLink: "www.google.com.br", imgSrc: "https://pbs.twimg.com/profile_images/1662499731564638209/boE4IzYd_400x400.jpg"},
-        {id: 3, title: "Lorem ipsum dolor sit amet. In dolores quis sed labo", description: "Lorem ipsum dolor sit amet. In dolores quis sed laboriosam fugiat sit veniam recusandae eos eius voluptatem est omnis tenetur. Et cumque unde et nobis iste ex odio alias ut libero officiis et voluptas consequuntur? Ut molestias mollitia et dolor libero et repudiandae ratione At eius voluptatem.", projectLink: "www.google.com.br", imgSrc: "https://pbs.twimg.com/profile_images/1662499731564638209/boE4IzYd_400x400.jpg"},
-        {id: 3, title: "Lorem ipsum dolor sit amet. In dolores quis sed labo", description: "Lorem ipsum dolor sit amet. In dolores quis sed laboriosam fugiat sit veniam recusandae eos eius voluptatem est omnis tenetur. Et cumque unde et nobis iste ex odio alias ut libero officiis et voluptas consequuntur? Ut molestias mollitia et dolor libero et repudiandae ratione At eius voluptatem.", projectLink: "www.google.com.br", imgSrc: "https://pbs.twimg.com/profile_images/1662499731564638209/boE4IzYd_400x400.jpg"},
+        {id: 2, title: "Frontend Food Explorer", description: "Frontend do projeto Food Explorer, criado para o desafio final do curso da Rocketseat Explorer. É um app que simula um restaurante online, possui painel admnistrativo e os usuários podem realizar pedidos.", projectLink: "https://github.com/CaioMar7/foodexplorer-frontend", imgSrc: "https://github.com/CaioMar7/foodexplorer-frontend/blob/main/src/assets/images/food-explorer.png?raw=true"},
+        {id: 3, title: "Backend Food Explorer", description: "Backend do projeto Food Explorer, criado para o desafio final do curso da Rocketseat Explorer. É um app que simula um restaurante online, possui painel admnistrativo e os usuários podem realizar pedidos.", projectLink: "https://github.com/CaioMar7/foodexplorer-backend", imgSrc: "https://github.com/CaioMar7/foodexplorer-frontend/blob/main/src/assets/images/food-explorer.png?raw=true"},
+        {id: 3, title: "Frontend InfraWiki", description: "Frontend do projeto InfraWiki, o projeto consiste em um pequeno blog com interface agradável voltada para a área de infraestrutura, os usuários podem publicar seus conteúdos para outros usuários visualizarem.", projectLink: "https://github.com/CaioMar7/infrawiki-frontend", imgSrc: "https://i.imgur.com/dFUc3nG.png"},
+        {id: 3, title: "Backend InfraWiki", description: "Frontend do projeto InfraWiki, o projeto consiste em um pequeno blog com interface agradável voltada para a área de infraestrutura, os usuários podem publicar seus conteúdos para outros usuários visualizarem.", projectLink: "https://github.com/CaioMar7/infrawiki-backend", imgSrc: "https://i.imgur.com/dFUc3nG.png"},
         {id: 3, title: "Meu Bolso", description: "A idéia desse projeto é desenvolver um app que facilite sua gestão financeira, para utilização pessoal ou comercial. Esse projeto está sendo refeito pois perdi quando meu pc ficou ruim.", projectLink: "https://github.com/CaioMar7/meubolso-frontend", imgSrc: "https://i.imgur.com/aOhViEQ.png"},
     ]
 
@@ -45,7 +45,11 @@ export function Home() {
                 </div>
                 <div>
                     <LinkButton to="https://www.trello.com" target="_blank" text="Download CV" icon={BsFillArrowDownCircleFill}/>
-                    <LinkButton to="https://www.trello.com" target="_blank" text="Fale comigo" icon={BiMessageSquareDetail}/>
+                </div>
+                <div>
+                    <LinkButton to="https://github.com/CaioMar7" target="_blank" text="Github" icon={BiLogoGithub}/>
+                    <LinkButton to="https://www.linkedin.com/in/caiomar7/" target="_blank" text="Linkedin" icon={AiOutlineLinkedin}/>
+                    <LinkButton to="https://api.whatsapp.com/send?phone=5521982072895" target="_blank" text="Whatsapp" icon={AiOutlineWhatsApp}/>
                 </div>
             </FirstSection>
             <SecondSection>

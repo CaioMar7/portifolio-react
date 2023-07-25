@@ -18,6 +18,8 @@ export const Container = styled.div `
     "fifthsection"
     "sixthsection"
     ;
+
+    
 `
 
 export const Section = styled.section`
@@ -33,6 +35,8 @@ export const Section = styled.section`
 
     max-width: 50rem;
     margin: 0 auto;
+
+    background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
 `
 
 
@@ -66,12 +70,25 @@ export const FirstSection = styled(Section)`
         }
     }
 
-    div:nth-child(2) {
+    div:nth-child(2){
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 1rem;
     }
+
+    div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        @media screen and (min-width: 450px) {
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+
 `
 
 export const SecondSection = styled(Section)`
