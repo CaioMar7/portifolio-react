@@ -136,6 +136,22 @@ export const FifthSection = styled(Section) `
 
 export const SixthSection = styled(Section) `
     grid-area: sixthsection;
+
+    ul {
+        margin-top: 1rem;
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+
+        gap: 1rem;
+
+
+        @media screen and (min-width: 450px) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 `
 
 export const SectionTitle = styled.h2`

@@ -6,6 +6,7 @@ import { AiOutlineHtml5, AiOutlineConsoleSql } from "react-icons/ai"
 import { BsFiletypeCss } from "react-icons/bs"
 import { RiGraduationCapFill } from "react-icons/ri"
 import ImgCaio  from "../../assets/portifolio-img.png"
+import { Card } from "../../components/Card";
 
 export function Home() {
     const academicList = [
@@ -23,6 +24,15 @@ export function Home() {
         {id: 5, icon: <BiLogoNodejs/>, text: "NODEJS"},
         {id: 6, icon: <AiOutlineConsoleSql/>, text: "SQL"},
         {id: 7, icon: <BiLogoGithub/>, text: "GIT"},
+    ]
+
+    const projectList = [
+        {id: 1, title: "Meu Portifólio", description: "Projeto do meu portifólio, mobile-first, responsivo. A idéia desse portifólio é ser minimalista e objetivo, pois acredito que passe maior profissionalismo e facilite para a análise dos recrutadores.", projectLink: "https://github.com/CaioMar7/portifolio-react", imgSrc: "https://i.imgur.com/AibiHiL.png"},
+        {id: 2, title: "Lorem ipsum dolor sit amet. In dolores quis sed labo", description: "Lorem ipsum dolor sit amet. In dolores quis sed laboriosam fugiat sit veniam recusandae eos eius voluptatem est omnis tenetur. Et cumque unde et nobis iste ex odio alias ut libero officiis et voluptas consequuntur? Ut molestias mollitia et dolor libero et repudiandae ratione At eius voluptatem.", projectLink: "www.google.com.br", imgSrc: "https://pbs.twimg.com/profile_images/1662499731564638209/boE4IzYd_400x400.jpg"},
+        {id: 3, title: "Lorem ipsum dolor sit amet. In dolores quis sed labo", description: "Lorem ipsum dolor sit amet. In dolores quis sed laboriosam fugiat sit veniam recusandae eos eius voluptatem est omnis tenetur. Et cumque unde et nobis iste ex odio alias ut libero officiis et voluptas consequuntur? Ut molestias mollitia et dolor libero et repudiandae ratione At eius voluptatem.", projectLink: "www.google.com.br", imgSrc: "https://pbs.twimg.com/profile_images/1662499731564638209/boE4IzYd_400x400.jpg"},
+        {id: 3, title: "Lorem ipsum dolor sit amet. In dolores quis sed labo", description: "Lorem ipsum dolor sit amet. In dolores quis sed laboriosam fugiat sit veniam recusandae eos eius voluptatem est omnis tenetur. Et cumque unde et nobis iste ex odio alias ut libero officiis et voluptas consequuntur? Ut molestias mollitia et dolor libero et repudiandae ratione At eius voluptatem.", projectLink: "www.google.com.br", imgSrc: "https://pbs.twimg.com/profile_images/1662499731564638209/boE4IzYd_400x400.jpg"},
+        {id: 3, title: "Lorem ipsum dolor sit amet. In dolores quis sed labo", description: "Lorem ipsum dolor sit amet. In dolores quis sed laboriosam fugiat sit veniam recusandae eos eius voluptatem est omnis tenetur. Et cumque unde et nobis iste ex odio alias ut libero officiis et voluptas consequuntur? Ut molestias mollitia et dolor libero et repudiandae ratione At eius voluptatem.", projectLink: "www.google.com.br", imgSrc: "https://pbs.twimg.com/profile_images/1662499731564638209/boE4IzYd_400x400.jpg"},
+        {id: 3, title: "Meu Bolso", description: "A idéia desse projeto é desenvolver um app que facilite sua gestão financeira, para utilização pessoal ou comercial. Esse projeto está sendo refeito pois perdi quando meu pc ficou ruim.", projectLink: "https://github.com/CaioMar7/meubolso-frontend", imgSrc: "https://i.imgur.com/aOhViEQ.png"},
     ]
 
     return (
@@ -69,9 +79,13 @@ export function Home() {
             </FifthSection>
             <SixthSection>
                 <SectionTitle> Projetos </SectionTitle>
-                <SectionDescription> Clicando em qualquer projeto você será encaminhado para o respectivo repositório em meu Github. </SectionDescription>
+                <SectionDescription> Clicando no botão 'Ver projeto' projeto você será encaminhado para o respectivo repositório em meu Github. </SectionDescription>
                 <ul>
-
+                    {
+                        projectList && projectList.map(project => (
+                            <Card imgSrc={project.imgSrc} title={project.title} description={project.description} projectLink={project.projectLink}/>
+                        ))
+                    }
                 </ul>
             </SixthSection>
         </Container>
