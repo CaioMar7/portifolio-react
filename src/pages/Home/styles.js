@@ -37,6 +37,20 @@ export const Section = styled.section`
     margin: 0 auto;
 
     background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
+
+    
+    @keyframes fadein {
+        0% {
+            transform: translateY(40%);
+            opacity: 0;
+            display: none;
+        }
+        100% {
+            transform: translateY(0%);
+            opacity: 1;
+            display: block;
+        }
+        }
 `
 
 
@@ -58,6 +72,10 @@ export const FirstSection = styled(Section)`
         align-items: center;
         gap: 1rem;
 
+        animation-name: fadein;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+
         p {
             color: ${({theme}) => theme.COLORS.TEXT_WHITE};
             font-weight: 500;
@@ -75,6 +93,10 @@ export const FirstSection = styled(Section)`
         justify-content: center;
         align-items: center;
         gap: 1rem;
+        
+        animation-name: fadein;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
     }
 
     div:nth-child(3) {
@@ -82,6 +104,10 @@ export const FirstSection = styled(Section)`
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+
+        animation-name: fadein;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
 
         @media screen and (min-width: 450px) {
             flex-direction: row;
@@ -99,6 +125,7 @@ export const SecondSection = styled(Section)`
         height: 100%;
 
         max-width: 40rem;
+        
 
         img {
             padding: 3rem 2rem;
@@ -110,6 +137,10 @@ export const SecondSection = styled(Section)`
             mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
             
             transition: all .6s;
+
+            animation-name: fadein;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
 
             &:hover {
                 transform: scale(1.05);
