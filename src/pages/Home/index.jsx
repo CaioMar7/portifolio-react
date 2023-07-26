@@ -44,7 +44,7 @@ export function Home() {
                     <p> Desenvolvedor Web Fullstack</p>
                 </div>
                 <div>
-                    <LinkButton to="https://www.trello.com" target="_blank" text="Download CV" icon={BsFillArrowDownCircleFill}/>
+                    <LinkButton to="https://drive.google.com/file/d/1qDneCLcccKIJ8Vne_iMF1uhotrYjq-mr/view?usp=sharing" target="_blank" text="Download CV" icon={BsFillArrowDownCircleFill}/>
                 </div>
                 <div>
                     <LinkButton to="https://github.com/CaioMar7" target="_blank" text="Github" icon={BiLogoGithub}/>
