@@ -58,7 +58,6 @@ export const Section = styled.section`
 
 export const FirstSection = styled(Section)`
     grid-area: firstsection;
-    align-items: inherit;
 
     gap: 2rem;
 
@@ -77,6 +76,8 @@ export const FirstSection = styled(Section)`
         animation-name: fadein;
         animation-duration: 2s;
         animation-fill-mode: forwards;
+
+        text-align: center;
 
         p {
             color: ${({theme}) => theme.COLORS.TEXT_WHITE};
