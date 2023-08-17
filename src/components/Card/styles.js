@@ -24,6 +24,8 @@ export const Container = styled.li`
         height: 20rem;
         max-width: 25rem;
         max-height: 20rem;
+
+        object-fit: contain;
     }
 
     a {
