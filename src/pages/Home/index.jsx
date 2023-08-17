@@ -33,7 +33,7 @@ export function Home() {
         {id: 3, title: "Backend InfraWiki", description: "Frontend do projeto InfraWiki, o projeto consiste em um pequeno blog com interface agradável voltada para a área de infraestrutura, os usuários podem publicar seus conteúdos para outros usuários visualizarem.", projectLink: "https://github.com/CaioMar7/infrawiki-backend", imgSrc: "https://i.imgur.com/dFUc3nG.png"},
         {id: 4, title: "Frontend Meu Bolso", description: "A idéia desse projeto é desenvolver um app que facilite sua gestão financeira, para utilização pessoal ou comercial.", projectLink: "https://github.com/CaioMar7/meubolso-frontend", imgSrc: "https://i.imgur.com/xw7Lm9f.png"},
         {id: 5, title: "Backend Meu Bolso", description: "A idéia desse projeto é desenvolver um app que facilite sua gestão financeira, para utilização pessoal ou comercial.", projectLink: "https://github.com/CaioMar7/meubolso-backend", imgSrc: "https://i.imgur.com/xw7Lm9f.png"},
-        {id: 6, title: "Todolist com Typescript", description: "Um todolist feito com React e Typescript onde a lista de tarefas fica armazenada no localstorage.", projectLink: "https://github.com/CaioMar7/todolist-react-typescript", imgSrc: "https://i.imgur.com/49kPC53.png"},
+        {id: 6, title: "Todolist com Typescript", description: "Um todolist feito com React e Typescript onde a lista de tarefas fica armazenada no localstorage.", projectLink: "https://github.com/CaioMar7/todolist-react-typescript", imgSrc: "https://i.imgur.com/Ayev0Nd.png"},
     ]
 
     return (
